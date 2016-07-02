@@ -147,21 +147,19 @@
      (5)setTimeout用法 ： setTimeout(“functionName”,internalTime);
      
     三、photos.html
-    
-    1. 通过ul列表(设置ul li的格式为display:inline)列出小图片,图片放在a标签中.
 
-    2. js代码
+    1.通过ul列表(设置ul li的格式为display:inline)列出小图片,图片放在a标签中.
+
+    2.js代码
     
     ```javascript
     function preparePlace(){
     if(!document.getElementById) return false;
     if(!document.getElementsByTagName) return false;
-
     var photoContainer = document.createElement("div");
     photoContainer.setAttribute("id","photoContainer");
     var imagegallery = document.getElementById("imagegallery");
     insertAfter(photoContainer,imagegallery);
-
     var img_place = document.createElement("img");
     img_place.setAttribute("id","display_img");
     img_place.setAttribute("src","");
@@ -177,11 +175,9 @@
    function display(){
     if(!document.getElementById) return false;
     if(!document.getElementsByTagName) return false;
-
     var imagegellery = document.getElementById("imagegallery");
     var links = imagegellery.getElementsByTagName("a");
     console.log("links "  + links);
-
     for(var i=0 ; i < links.length ; i++){
         console.log("click monitor");
         links[i].onclick = function(){
